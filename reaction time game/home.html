@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main game container -->
+    <div class="container">
+        <!-- Difficulty selection buttons -->
+        <div style="display: flex; gap: 10px;">
+            <button id="simple">Simple</button>
+            <button id="moderate">Moderate</button>
+            <button id="difficult">Difficult</button>
+        </div>
+        <p>Stop at 30 to win</p>
+        <h1 id="counter">0</h1>
+        <h2 id="result"></h2>
+        <button id="stopBtn">Stop</button>
+        <button id="resetBtn">Reset</button>
+        <!-- Sound effects -->
+        <audio id="winSound" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+        <audio id="gameSound" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" loop></audio>
+    </div>
+    <script src="action.js"></script>
+</body>
+</html>
